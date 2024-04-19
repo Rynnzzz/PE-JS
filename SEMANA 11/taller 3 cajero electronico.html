@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cajero electronico</title>
+    <!-- link del sitio sweet alert mensajes mas elegantes  -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        h1,h2,h3{
+            font-size: 26px;
+            color: blueviolet;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="./IMG/WhatsApp Image 2024-04-19 at 7.10.48 AM.jpeg" alt="" width="150" height="150">
+        <h1>BANCO NUBAK</h1>
+        <h2>RETIRO DE DINERO DE CAJERO ELECTRONICO</h2>
+        <h3>BIENVENIDO SR.USUARIO</h3>
+        <script>
+            let sw=0; //variable bandera para verificar 
+            let cuenta=prompt("ingrese cuenta de ahorros")
+            let saldo=parseInt(prompt("ingrese valor a consignar"))
+            let valor=parseInt(prompt("ingrese monto de dinero a retirar"))
+            //condicional
+            if(valor>saldo){
+                swal("estimado usuario","***** FONDOS INSUFICIENTES ******","error");
+            }else{
+                sw=1;//var bandera activada 
+                var saldof;
+                saldof=saldo-valor;
+                swal("estimado usuario","RETIRE SU DINERO!!","success");
+            }
+            //conditional
+            if(sw=0){
+                document.write("FAVOR RETIRE SU TARJETA ... SU SALDO ACTUAL ES ....$"+saldof);
+            }
+
+
+        </script>
+    </center>
+
+    
+</body>
+</html>

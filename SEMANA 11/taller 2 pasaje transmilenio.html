@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASAJE TM</title>
+    <!-- link del sitio sweet alert mensajes mas elegantes  -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <img src="./IMG/WhatsApp Image 2024-04-19 at 7.10.48 AM (1).jpeg" alt="" width="150" height="150">
+        <h1>INGRESO A SISTEMA TRANSMILENIO</h1>
+        <h2>VALIDACION DE PASAJE - TARJETA TU LLAVE</h2>
+        <script>
+            let saldo;
+            const TM=2950;
+            //entrada
+            saldo=parseInt(prompt("ingrese recarga de su trajeta TM"));
+            //condicional
+            if(saldo>=TM){
+                swal("estimado usuario","INGRESE AL SISTEMA","success");
+                document.write("BIENVENIDO AL SISTEMA TRANSMILENIO");
+            }else{
+                swal("estimado usuario","SALDO INSUFICIENTE","error");
+                document.write("RECARGUE SU TARJETA TU LLAVE");
+            }
+
+        </script>
+
+
+    </center>
+
+    
+</body>
+</html>
